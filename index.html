@@ -3,73 +3,99 @@
 
 <head>
       <meta charset="UTF-8">
-   <!-- Linking CSS -->
-      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" media="screen">
     <title> My Bio page </title>
 </head>
 
 <body>
 
-  <!-- A fixed header contains name and page tags -->
-    <header class="header" >
-    <div class="name">Tung Tung Ouyang</div>
-    <div class="header-tab"></div>
-     <div class="tabs">
-       <ul>  
-         <li><a href="index.html" style="text-decoration:none">About |</a></li>
-         <li><a href="portfolio.html" style="text-decoration:none"> Portfolio |</a></li>
-         <li><a href="contact.html" style="text-decoration:none"> Contact</a></li>
-       </ul>
-     </div>
-    </header>
+<!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
 
-    <!-- A section that contains entire contents -->
-    <div class="entire">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-12 phone-nav">
+              <a class="navbar-brand" href="#" id="logo">Tung Tung Ouyang</a>
+            </div>
+          </div>
 
-      <div class="section about-me">
-      <h2>About Me</h2>
-      <hr> 
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="index.html">About</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
 
-        <img id="bio-image" src="http://4.bp.blogspot.com/-cT9bfj5o3kw/VKa3UGTjC_I/AAAAAAAAA_4/Jk9Sb-8NnaA/s1600/cat%2Bwith%2Bglasses%2Bprofile%2Bpic.jpg" alt="Ouyang">
+    <!-- Start of content wrap -->
+    <div class="wrap">
+      <div class="container">
+        <section class="row">
+          <div class="col-md-8">
+            <article class="about-me-content">
+              <h1 class="about-me-header">About Me</h1>
+              <hr class="about-me-hr"/>
+              <img src="assets/images/cat.png" alt="" id="nate-image"/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <br />
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
 
-        <p>Nulla tempor ornare diam, vitae volutpat erat bibendum eget. Nunc sagittis placerat velit sit amet interdum. Nam in iaculis purus, quis tristique velit. Cras ut nisl vitae orci malesuada placerat non sed magna. Nulla ultrices, dolor at aliquam volutpat,
-        lorem magna pharetra arcu, eget feugiat nisi libero at nunc. Phasellus finibus elit at sapien vehicula varius. Maecenas in dapibus leo. Aliquam molestie vulputate metus. Morbi sed posuere quam, et sodales felis. Proin augue nulla, pellentesque
-        at venenatis vel, sagittis eget nibh. Maecenas libero velit, luctus eu velit vitae, eleifend convallis felis.</p>
+            <!-- Start of Connect With Me Area -->
+            <section id="connect-with-me-area">
+              <div class="connect-with-me-content">
+                <h1 class="connect-with-me-header">Connect With Me</h1>
+                <hr />
+                <div id="images">
+                  <img src="assets/images/git.png" alt="" class="connect-with-me-photo">
+                  <img src="assets/images/link.png" alt="" class="connect-with-me-photo">
+                  <img src="assets/images/stack.png" alt="" class="connect-with-me-photo">
+                </div>
+              </div>
+            </section>
+            <!-- End of the Connect With Me Area -->
 
-        <p>Nullam imperdiet vehicula dolor eu consectetur. Vestibulum pulvinar lobortis accumsan. Phasellus lobortis pulvinar augue, eu ultrices dui. Donec ut est erat. In facilisis tellus nibh, eu consequat diam commodo a. Nam egestas sapien nunc, ullamcorper
-        semper odio feugiat non. Duis et nisl leo. Aliquam consectetur vestibulum turpis. Vivamus non elit ut lorem mattis iaculis. Suspendisse ullamcorper ante orci, et condimentum nisi pharetra id. Praesent ut erat in eros mollis interdum quis ut nisi.
-        Etiam ac risus in erat imperdiet sagittis eu sed metus. Etiam molestie ipsum sed vehicula efficitur. Cras eu metus in ex vehicula sodales.</p>
-        <p>Maecenas feugiat, ex quis hendrerit interdum, felis ante laoreet sem, vitae tincidunt diam lectus fringilla dolor. Nunc vitae dui sed ligula pharetra sagittis in nec ante. Sed consequat congue vehicula. Donec vel risus at sapien rhoncus consequat
-        a lobortis lorem. Mauris ut sem massa. Curabitur ac consequat eros. Nulla non nibh eros. Donec porta condimentum nisi a iaculis. Sed sit amet risus at lacus suscipit accumsan sed ullamcorper lorem. Proin sed egestas risus. Sed egestas ex ac finibus
-        ornare.</p>
-      </div>
-
-      <div class="section connect-with-me">
-      <h3>Connect with Me</h3>
-      <hr>
-
-        <a href="https://github.com/ouyangtt" target="_blank" style="text-decoration:none"> 
-         <img id="github" src="assets/images/git.png" alt="github">
-        </a>
-
-        <a href="https://www.linkedin.com/in/tung-tung-ouyang-03764093/" target="_blank" style="text-decoration:none"> 
-         <img id="linkedln" src="assets/images/link.png" alt="linkedin">
-        </a>
-
-        <a href="https://stackoverflow.com/users/9129451/tung-tung-ouyang" target="_blank" style="text-decoration:none"> 
-         <img id="stack" src="assets/images/stack.png" alt="stack">
-        </a>
-
+          </div>
+        </section>
       </div>
     </div>
-     <div class="footer">
-      <p>Copyright &copy; 2018 Tung Tung Ouyang</p>
-     </div>
-</body>
+    <!-- End of content wrap -->
+
+    <!-- Start of footer -->
+    <footer class="footer">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        &copy; Copyright 2017 Tung Tung Ouyang
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
 </html>
 
